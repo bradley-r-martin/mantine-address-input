@@ -1,5 +1,9 @@
 name: Deploy Storybook
 
+# NOTE: Before this workflow can run, GitHub Pages must be enabled in repository settings:
+# Settings → Pages → Source: "GitHub Actions"
+# See: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
 on:
   push:
     branches: [main]
@@ -24,10 +28,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build Storybook
         run: npm run build-storybook

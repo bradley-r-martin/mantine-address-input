@@ -42,7 +42,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/mantine-address-input.git"
+    "url": "https://github.com/bradley-r-martin/mantine-address-input.git"
   },
   "peerDependencies": {
     "@mantine/core": "^7.0.0",
